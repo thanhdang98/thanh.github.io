@@ -1,50 +1,256 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>:)</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nhóm 8 Lập trình web</title>
+        <link rel = "icon" href =  
+"data:image/png;base64,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" 
+        type = "image/x-icon"> 
+        <meta charset="utf-8">
+        <style>
+          * {
+            box-sizing:border-box
+          }
+          h2 {
+            text-align: center;
+          }
+          /* Slideshow container */
+          .slideshow-container {
+            max-width: 500px;
+            position: relative;
+            margin: auto;
+          }
+          /* Ẩn các slider */
+          .mySlides {
+              display: none;
+          }
+          /* Định dạng nội dung Caption */
+          .name {
+            color: #f82929;
+            font-size: 20px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: -78px;
+            width: 100%;
+            font-weight: bolder;
+            text-align: center;
+          }
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/spinload.css">
-    <link rel="stylesheet" type="text/css" href=" https://fonts.googleapis.com/css?family=Pacifico" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- Preloader -->
-    <div id="preloader">
-      <div class="spinner">
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="rect3"></div>
-        <div class="rect4"></div>
-        <div class="rect5"></div>
-      </div>
-  </div>
-      <div id="bg"></div>
-      <div class="content">
-        <header>
-          <h2>Do you love meeeee.!!!</h2>
-          <h4>Không trả lời mà thoát ra làm chó</h4>
-        </header>
-        <button id="yes" type="button" class="btn btn-danger btn-lg">Yêu vl :) </button>
-        <button id="no" type="button" class="btn btn-info btn-lg">Đéo :) </button>
-      </div>
-    </div>
-    <audio src="./sound/sound.mp3" autoplay></audio>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="js/myJs.js"></script>
+          /* định dạng các chấm chuyển đổi các slide */
+          .dot {
+            cursor:pointer;
+            height: 13px;
+            width: 13px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+          /* khi được hover, active đổi màu nền */
+          .active, .dot:hover {
+            background-color: #717171;
+          }
 
-  </body>
+          /* Thêm hiệu ứng khi chuyển đổi các slide */
+          .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 3s;
+            animation-name: fade;
+            animation-duration: 3s;
+          }
+
+          @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+
+          @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+          @media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.navbar a.active {
+      border-bottom: 3px solid red;
+    }
+/* Style the top navigation bar */
+.navbar {
+  /* overflow: hidden; */
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+.dropbtn {  
+  background-color: #333;
+  color: white; /*màu chữ*/
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 80px;
+  box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1;
+  color: #ddd;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #333;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ddd;}
+* {
+  box-sizing: border-box;
+}
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+.title {
+      color: grey;
+      font-size: 18px;
+    }
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+        </style>
+    </head>
+    <body> 
+        <div class="navbar">
+            <div>
+            <a class="active" href="#">Home</a>
+            <a href="#">About</a>
+            <!-- <a href="#">Contact</a> -->
+            <!-- <a href="#" class="right">Contact</a> -->
+            <div class="dropdown">
+              <!-- <button class="dropbtn">Contact</button> -->
+              <a href="#" class="dropbtn">Contact</a>
+              <div class="dropdown-content">
+                <a href="https://www.facebook.com/thanhdang98">Facebook</a>
+                <a href="https://www.gapo.vn/profile/211063">Gapo</a>
+                <a href="tel:0336734111">Phone</a>
+              </div>
+            </div>
+            </div>
+          </div>
+            
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <a href="https://thanhdang98.github.io/thanh.github.io/Profile.html"><img src="https://scontent.fhph1-2.fna.fbcdn.net/v/t1.0-9/86701831_2537973556460219_8969591357161078784_n.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_eui2=AeGyZj8B22h7_UHhW1PI2lD2NXF4IjSuOskvUfZZ0BLgacKu2CpCQ-BuqkR5jw6K7zOxI-LG7WtqQGc7eWh_kQ2sOeWb5zG44zM0YDEnkNsj9g&_nc_ohc=byNhwzodoWAAX8SFoiy&_nc_ht=scontent.fhph1-2.fna&oh=54057ef58448b0edf99a680e6a57010a&oe=5EF9B86A" style="width:100%"></a>
+          <div class="name">Đặng Trọng Thành</div>
+        </div>
+
+        <div class="mySlides fade">
+          <a href="#"><img src="https://scontent.fhph1-1.fna.fbcdn.net/v/t1.0-9/86857624_2537973549793553_5782819640363188224_n.jpg?_nc_cat=100&_nc_sid=8024bb&_nc_eui2=AeFm6P3i9Ur7yY1gFItkquyPGYT_nXdi8FMgIRSpduNWn9YgxXX00Re3G39tk5T33RHDzDWvKcOOj4bkg5jOuz15FIEquEWUucVxZ5JVQRJHFQ&_nc_ohc=4bnZePENi-wAX_pfoDb&_nc_ht=scontent.fhph1-1.fna&oh=91b6d2ec88ee25fd600571c31d3d9279&oe=5EB9FEB5" style="width:100%"></a>
+          <div class="name">Vũ Văn Thạnh</div>
+        </div>
+
+        <div class="mySlides fade">
+            <a href="#"><img src="https://scontent.fhph1-1.fna.fbcdn.net/v/t1.0-9/86933721_2537973563126885_547240857133121536_n.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_eui2=AeE1213CMYfsAguF28sQR8tzI2P8jY2bg46HGoJCAqiD9L0247U9FLzos4t_NyGVRN1L11pFuHWBXFEZNePAEjOQqGFL5sljuBV29CpQfH7bkQ&_nc_ohc=d7YpSdUfKV0AX-6gH47&_nc_ht=scontent.fhph1-1.fna&oh=c13512e424529ed09a4564897e2d09b5&oe=5EC0F175" style="width:100%"></a>
+            <div class="name">Vũ Văn Thiên</div>
+        </div>
+
+        <div class="mySlides fade">
+            <a href="#"><img src="https://scontent.fhph1-1.fna.fbcdn.net/v/t1.0-9/86857624_2537973549793553_5782819640363188224_n.jpg?_nc_cat=100&_nc_sid=8024bb&_nc_eui2=AeFm6P3i9Ur7yY1gFItkquyPGYT_nXdi8FMgIRSpduNWn9YgxXX00Re3G39tk5T33RHDzDWvKcOOj4bkg5jOuz15FIEquEWUucVxZ5JVQRJHFQ&_nc_ohc=4bnZePENi-wAX_pfoDb&_nc_ht=scontent.fhph1-1.fna&oh=91b6d2ec88ee25fd600571c31d3d9279&oe=5EB9FEB5" style="width:100%"></a>
+          <div class="name">Bùi Đình Thắng</div>
+          </div>
+
+          <div class="mySlides fade">
+            <a href="#"><img src="https://scontent.fhph1-1.fna.fbcdn.net/v/t1.0-9/87017679_2537973593126882_4286526070355656704_n.jpg?_nc_cat=110&_nc_sid=8024bb&_nc_eui2=AeEyA4LGjPY6H05y6V3hR2QsSwcTXfWjtO49xOSpRQ8YmVC3pCAzdkdCzG5ehJRt5fIrKefOHV_vRz_yCExRHg-KplTueqUumAWybflSX26Obw&_nc_ohc=1VE6lbPtMCUAX80e8aI&_nc_ht=scontent.fhph1-1.fna&oh=319d7f037f8e657cc9fa9819dd3f82f2&oe=5EBBF85A" style="width:100%"></a>
+            <div class="name">Nguyễn Cảnh Tiến</div>
+          </div>
+          
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+      </div>  
+    </body>
+    <script>
+      //khai báo biến slideIndex đại diện cho slide hiện tại
+      var slideIndex;
+      // KHai bào hàm hiển thị slide
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          //chuyển đến slide tiếp theo
+          slideIndex++;
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    
+          //tự động chuyển đổi slide sau 5s
+          setTimeout(showSlides, 3000);
+      }
+      //mặc định hiển thị slide đầu tiên 
+      showSlides(slideIndex = 0);
+
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    </script>
 </html>
